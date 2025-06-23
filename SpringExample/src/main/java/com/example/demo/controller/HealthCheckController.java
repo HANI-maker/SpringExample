@@ -11,12 +11,12 @@ public class HealthCheckController {
         return "OK";
     }
 
-    @GetMapping("/hello")
-    public String hello() {
-        return "Hello from Spring Boot!";
-    }
+    #@GetMapping("/hello")
+    #public String hello() {
+    #    return "Hello from Spring Boot!";
+    #}
     
-    @GetMapping("/hello2")
+    @GetMapping("/hello")
     public String hello() {
         long sum = 0;    
         for (int i = 0; i < 1_000_000; i++) {
