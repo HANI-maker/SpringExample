@@ -19,7 +19,7 @@ public class HealthCheckController {
     @GetMapping("/hello2")
     public String hello() {
         long sum = 0;    
-        for (int i = 0; i < 10_000_000; i++) {
+        for (int i = 0; i < 1_000_000; i++) {
             sum += Math.sqrt(i); // CPU 연산 부하
         }
         return "CPU load done: " + sum;
